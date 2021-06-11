@@ -1,11 +1,7 @@
 <template>
   <div>
-    <h1>Events Listing</h1>
-    <event-card
-      v-for="event in events"
-      :key="event.id"
-      :event="event"
-    />
+    <h1>Events Listing - Real World Vue 2</h1>
+    <event-card v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
@@ -17,16 +13,16 @@ export default {
   components: { EventCard },
   data() {
     return {
-      events: []
+      events: [],
     }
   },
   created() {
     EventService.getEvents()
-      .then( response => {
-        this.events = response.data; 
+      .then((response) => {
+        this.events = response.data
       })
-      .catch( error => console.log(error.response))
-  }
+      .catch((error) => console.log(error.response))
+  },
 }
 </script>
 

@@ -1,4 +1,4 @@
-# Course Vue Mastery - [real-world-vue](https://www.vuemastery.com/courses/real-world-vue-js)
+# Course Vue Mastery - [real-world-vue-2](https://www.vuemastery.com/courses/real-world-vue-js)
 
 
 
